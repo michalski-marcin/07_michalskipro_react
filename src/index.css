@@ -7,6 +7,14 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #212121;
 
+  --cr1: #0b1118;
+  --cr2: #cafd36;
+  --cr3: #4eeefc;
+  --cr4: #fc286c;
+  --cr5: #ebebeb;
+  --cr6: #b4dadf;
+  --cr7: #64858b;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -28,7 +36,7 @@ a:hover {
 
 html {
   height: 100%;
-  
+
 }
 
 body {
