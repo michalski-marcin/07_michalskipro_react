@@ -1,19 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;400;500;600&family=Roboto:wght@100;300;400;500&display=swap");
+
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace; */
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Roboto Mono", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #212121;
+  /* color-scheme: light dark; */
+  color: var(--cr4);
+  /* background: 
+    radial-gradient(ellipse at bottom left, #222831 -100%, transparent); */
+    background-color: var(--bg);
 
-  --cr1: #0b1118;
-  --cr2: #cafd36;
-  --cr3: #4eeefc;
-  --cr4: #fc286c;
-  --cr5: #ebebeb;
-  --cr6: #b4dadf;
-  --cr7: #64858b;
+  --bg: #121212;
+  --cr1: #222831;
+  --cr2: #393e46;
+  --cr3: #00adb5;
+  --cr4: #ccc;
+  --cr5: #ff3b3b;
+
+
+ 
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -27,16 +36,20 @@
   padding: 0;
 }
 
+h1 span{
+  color: #00adb5;
+  font-family: Roboto;
+}
+
 a {
   text-decoration: inherit;
+  color: var(--cr4);
 }
 a:hover {
-  
 }
 
 html {
   height: 100%;
-
 }
 
 body {
@@ -67,8 +80,6 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
-
 
 /* 
 @media (prefers-color-scheme: light) {

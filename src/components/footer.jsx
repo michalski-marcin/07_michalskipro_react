@@ -4,7 +4,7 @@ function Footer() {
     return (
         <>
         <footer>
-            copywrighty
+            <p>copywright</p>
         </footer>
         </>
     )

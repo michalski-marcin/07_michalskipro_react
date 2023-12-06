@@ -1,16 +1,27 @@
 nav {
-    background-color: rgb(21, 109, 186);
     width: 100%;
     position: fixed;
     left: 0;
     top: 0;
-}
-
-.nav-wrap {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
-    max-width: 1280px;
-    margin: 0 auto;
+    padding: 15px 60px;
+    border-bottom: 1px solid #222831;
+    z-index: 999999;
 }
+
+.menu {
+    font-size: 13px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    margin-left: 12px;
+    cursor: pointer;
+}
+

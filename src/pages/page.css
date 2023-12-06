@@ -1,0 +1,18 @@
+.wrap {
+    padding: 120px 120px 0;
+    min-height: calc(100% - 60px);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto';
+    overflow: hidden;
+}
+
+
+
+
+.main-text {   
+    padding-top: 25px;
+}
+
+
+
