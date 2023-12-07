@@ -1,5 +1,5 @@
-import "./page.css";
-import FadeIn from "../components/Animations";
+import "../styles/page.css";
+import { FadeIn, FadeOpacity } from "../components/Animations";
 
 function About() {
   return (
@@ -7,6 +7,9 @@ function About() {
       <FadeIn>
         <div>O mnie</div>
       </FadeIn>
+      <FadeOpacity>
+        <div><h1>LOL</h1></div>
+      </FadeOpacity>
     </div>
   );
 }
