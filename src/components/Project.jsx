@@ -1,34 +1,46 @@
-import "../styles/project.css"
+import "../styles/project.css";
+import { projects } from "../data/projects"
+import { motion } from "framer-motion";
 
-export function Project(props) {
+ function Project() {
   return (
-    <div className='project-card'>
-      <div className="project-img">
-      <img src={`../public/projectimg/${props.image}`} alt='project' />
+    <div className="projects-container">
+      {projects.map((project, i) => (
+    <motion.div
+      className='project-card'
+      initial={{ opacity: 0, x: 300}}
+      animate={{ opacity: 1, x:0 }}
+      exit={{ opacity: 0, x: 300}}
+      transition={{duration: 0.3, delay: i * 0.4}}>
+  
+      <div className='project-img'>
+        <img src={`../projectimg/${project.image}`} alt='project' />
       </div>
-        <h3>{props.name}</h3>
-      <p>{props.description}</p>
-      
-      
+      <div className="project-text">
+      <h3>{project.name}</h3>
+      <p>{project.description}</p>
+
       <div className='project-techs'>
-        {props.technology.map((title) => {
+        {project.technology.map((title) => {
           return <div key={title}>{title}</div>;
         })}
       </div>
+      if ({project.github}) {
       <div className='project-github'>
         <img src='ikona githuba' alt='git' />
         <p>
-          <a href='#'>{props.github}</a>
+          <a href='#'>{project.github}</a>
         </p>
-      </div>
+      </div>}
       <div className='project-website'>
         <img src='ikona web' alt='' />
         <p>
-          <a href='#'>{props.webpage}</a>
-        </p>
+          <a href='#'>{project.webpage}</a>
+        </p></div>
       </div>
+    </motion.div>
+    ))}
     </div>
   );
 }
-
-
+export default Project;

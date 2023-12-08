@@ -1,11 +1,10 @@
-export default [
+export const projects =  [
     {
         id: 101,
-        image: 'none',
+        image: 'kryptopaczka.jpeg',
         name: 'Kryptopaczka',
-        description: 'lorem lorem',
+        description: 'Kryptopaczka is a part of mobilnekantory.pl. It allows users to provide contact, delivery and exchange details through contact form.',
         technology: ['JavaScript', 'HTML/CSS', 'PHP', 'API'],
-        github: 'github',
         webpage: 'strona'
     },
     {
@@ -13,7 +12,7 @@ export default [
         image: 'aai.png',
         name: 'ArtificialAI',
         description: 'bankrupt',
-        technology: ['JavaScript', 'HTML/CSS', 'PHP', 'API'],
+        technology: ['JavaScript', 'HTML/CSS'],
         github: 'github',
         webpage: 'strona'
     },

@@ -10,9 +10,9 @@ font-family: 'Roboto Mono', monospace; */
 
   /* color-scheme: light dark; */
   color: var(--cr4);
-  /* background: 
-    radial-gradient(ellipse at bottom left, #222831 -100%, transparent); */
+  background: radial-gradient(ellipse at bottom left, #222831 -100%, transparent);
     background-color: var(--bg);
+    background-attachment: fixed;
 
   --bg: #121212;
   --cr1: #222831;
