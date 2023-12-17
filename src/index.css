@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;400;500;600&family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600&family=Roboto:wght@100;300;400;500&display=swap");
+
 
 /* font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Mono', monospace; */
@@ -6,23 +7,24 @@ font-family: 'Roboto Mono', monospace; */
 :root {
   font-family: "Roboto Mono", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  font-weight: 400;
-
+  font-weight: 300;
+  
   /* color-scheme: light dark; */
   color: var(--cr4);
-  background: radial-gradient(ellipse at bottom left, #222831 -100%, transparent);
-    background-color: var(--bg);
-    background-attachment: fixed;
+  /* background: radial-gradient(110% 90% at 22.05% 22.29%,#141c1d 0,#040D12 100%); */
+  background: 
+    radial-gradient(ellipse at bottom left, #151f1f -100%, transparent),
+    radial-gradient(ellipse at top right, #152d2f -700%, transparent)
+    ;
+  background-color: var(--bg);
+  background-attachment: fixed;
 
-  --bg: #121212;
+  --bg: #0c0f10;
   --cr1: #222831;
   --cr2: #393e46;
   --cr3: #00adb5;
   --cr4: #ccc;
-  --cr5: #ff3b3b;
 
-
- 
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -36,7 +38,7 @@ font-family: 'Roboto Mono', monospace; */
   padding: 0;
 }
 
-h1 span{
+h1 span {
   color: #00adb5;
   font-family: Roboto;
 }
@@ -50,12 +52,14 @@ a:hover {
 
 html {
   height: 100%;
+  
 }
 
 body {
   /* place-items: center; */
   min-width: 320px;
   min-height: 100vh;
+  
 }
 
 h1 {

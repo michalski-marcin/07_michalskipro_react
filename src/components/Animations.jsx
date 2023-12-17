@@ -15,7 +15,7 @@ const FadeIn = ({children}) => {
       initial='initial'
       animate='animate'
       exit='exit'
-      transition={{ duration: 0.3 }}>
+      transition={{ duration: 0.5, ease: [0.445, 0.05, 0.55, 0.95] }}>
       {children}
     </motion.div>
   );

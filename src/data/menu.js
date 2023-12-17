@@ -1,6 +1,6 @@
 const menuItems = [
     {
-        name: 'MAIN',
+        name: 'ABOUT',
         active: true
     },
     {

@@ -1,5 +1,5 @@
 import "../styles/navbar.css";
-import logo from "../assets/logotext.svg";
+import logo from "../assets/logonotext.svg";
 import item from "../data/menu";
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
@@ -71,6 +71,7 @@ function Navbar() {
             </li>
           </ul>
         </div>
+        <div className="resume button">resume</div>
       </nav>
     </>
   );

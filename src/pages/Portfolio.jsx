@@ -1,5 +1,4 @@
 import "../styles/page.css";
-import "../styles/portfolio.css"
 import Project from "../components/Project";
 import { FadeIn, FadeOpacity } from "../components/Animations";
 
@@ -10,13 +9,9 @@ function Portfolio() {
     return (
         <div className="wrap">
             <FadeIn>
-            <div>Projekty</div>
+            <div>// 2023</div>
             </FadeIn>
-            <div className="projects-container">
-                
             <Project />
-            
-            </div>
             </div>
     )
 }

@@ -3,8 +3,8 @@
     min-height: calc(100% - 60px);
     display: flex;
     flex-direction: column;
-    font-family: 'Roboto';
-    overflow: hidden;
+    /* font-family: 'Roboto'; */
+    overflow-x: hidden;
 }
 
 

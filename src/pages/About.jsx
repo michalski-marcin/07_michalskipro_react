@@ -1,15 +1,72 @@
 import "../styles/page.css";
+import "../styles/about.css";
 import { FadeIn, FadeOpacity } from "../components/Animations";
+import { motion } from "framer-motion";
+import picture from "../assets/profilepic.png";
 
 function About() {
+ 
   return (
     <div className='wrap'>
-      <FadeIn>
-        <div>O mnie</div>
-      </FadeIn>
-      <FadeOpacity>
-        <div><h1>LOL</h1></div>
-      </FadeOpacity>
+      <section className='about-container'>
+        <div className='hi-container'>
+          <FadeIn>
+            <h1>Hi, my name is</h1>
+          </FadeIn>
+          <motion.div
+          initial={{ opacity: 0, x: 200 }}
+          animate={{ opacity: 100, x:0 }}
+          exit={{ opacity: 0, x:200 }}
+          transition={{ duration: 0.9, ease: [0.68, -0.55, 0.265, 1.55]}}
+          >
+            <h2>MARCIN </h2>
+            </motion.div>
+            <motion.div
+          initial={{ opacity: 0, x: -200 }}
+          animate={{ opacity: 100, x:0 }}
+          exit={{ opacity: 0, x:-200 }}
+          transition={{ duration: 0.9, ease: [0.68, -0.55, 0.265, 1.55]}}
+          >
+            <h2>
+              <span>MICHALSKI</span>
+            </h2>
+            </motion.div>
+          <div className='about-bottom-container'>
+            <motion.div className='about-bottom-socials'
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 100 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.5, delay: 0.35, ease: [0.445, 0.05, 0.55, 0.95] }}
+            >
+              <p className='p-comment'>// More about me</p>
+              <div className='social-buttons'>
+                <div className='social-button'>
+                  <a href='#'>
+                    <i class='devicon-github-original'></i>
+                  </a>
+                </div>
+                <div className='social-button'>
+                  <a href='#'>
+                    <i class='devicon-linkedin-plain'></i>
+                  </a>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div className='about-bottom-intro'
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 100 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.5, delay: 0.45, ease: [0.445, 0.05, 0.55, 0.95] }}>
+              <p className='p-comment'>// Short story</p>
+              <p>
+                I’m a front-end developer, passionate about coding and focused
+                on building websites and apps in React.
+              </p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
