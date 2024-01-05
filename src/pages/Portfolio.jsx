@@ -7,7 +7,7 @@ import { FadeIn, FadeOpacity } from "../components/Animations";
 function Portfolio() {
    
     return (
-        <div className="wrap">
+        <div className="wrap-projects">
             <FadeIn>
             <div>// 2023</div>
             </FadeIn>

@@ -59,19 +59,8 @@ function Navbar() {
                 {item[2].name}
               </Link>
             </li>
-            <li>
-              <Link
-                className={
-                  activeLink === item[3].name ? "menu-link active" : "menu-link"
-                }
-                to='/contact'
-                onClick={handleClick}>
-                {item[3].name}
-              </Link>
-            </li>
           </ul>
         </div>
-        <div className="resume button">resume</div>
       </nav>
     </>
   );

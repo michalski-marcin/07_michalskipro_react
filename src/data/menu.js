@@ -10,10 +10,6 @@ const menuItems = [
     {
         name: 'PORTFOLIO',
         active: false
-    },
-    {
-        name: 'CONTACT',
-        active: false
     }
    ];
 

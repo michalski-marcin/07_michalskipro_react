@@ -1,8 +1,8 @@
 import "../styles/page.css";
 import "../styles/about.css";
-import { FadeIn, FadeOpacity } from "../components/Animations";
+import { FadeIn } from "../components/Animations";
 import { motion } from "framer-motion";
-import picture from "../assets/profilepic.png";
+
 
 function About() {
  
@@ -49,6 +49,9 @@ function About() {
                   <a href='#'>
                     <i class='devicon-linkedin-plain'></i>
                   </a>
+                </div>
+                <div className="social-button resume">
+               <div className="download-resume"> <a href="./resume.pdf" download="marcin-michalski-resume"><i class='bx bxs-download'></i>RESUME</a></div>
                 </div>
               </div>
             </motion.div>
