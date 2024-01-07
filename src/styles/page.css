@@ -1,68 +1,93 @@
 .wrap {
-    padding: 120px 120px 0;
-    min-height: calc(100% - 60px);
-    display: flex;
-    flex-direction: column;
-    /* font-family: 'Roboto'; */
-    overflow-x: hidden;
+  padding: 120px 120px 0;
+  margin-bottom: 50px;
+  min-height: calc(100% - 60px);
+  display: flex;
+  flex-direction: column;
+  /* font-family: 'Roboto'; */
+  overflow-x: hidden;
 }
 
 .wrap-projects {
-    width: 65%;
-    min-height: calc(100% - 60px);
-    padding: 150px 0 0;
-    margin: 0 auto;
+  width: 65%;
+  min-height: calc(100% - 60px);
+  padding: 150px 0 0;
+  margin: 0 auto;
 }
 
-.main-text {   
-    padding-top: 25px;
+.main-text {
+  padding-top: 25px;
 }
 
 .skills-section {
-    margin-bottom: 60px;
-    width: 100%;
+  margin-bottom: 60px;
+  width: 100%;
 }
 
 .tools {
-    width: 100%;
+  width: 100%;
+  margin-bottom: 175px;
 }
 
-
 .projekty {
-    padding: 300px;
+  padding: 300px;
 }
 
 .skills-wrap {
-    width: 50%;
-    margin: 0 auto;
-    
+  width: 50%;
+  margin: 0 auto;
 }
 
 .skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: center; */
-    gap: 10px;
-    /* text-align: center; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  /* text-align: center; */
 }
-
-
 
 .skills-title {
-    margin: auto;
-    /* text-align: center; */
-    margin-bottom: 15px;
+  margin: auto;
+  /* text-align: center; */
+  margin-bottom: 15px;
 }
 
+@media screen and (max-width: 1080px) {
+  .wrap-projects {
+    width: 80%;
+  }
+  .skills-wrap {
+    width: 80%;
+  }
+}
 
+@media screen and (max-width: 1024px) {
+  .wrap {
+    padding: 120px 40px;
+  }
 
+  .skills-wrap {
+    padding: 20px 40px;
+  }
+  .skills-container {
+  }
+}
 
-@media screen and (max-width: 1024px){
-    .wrap {
-        padding: 120px 40px;
-    }
+@media screen and (max-width: 768px) {
+  .wrap {
+    padding: 120px 40px 30px;
+  }
+  .skills-wrap {
+    width: 90%;
+    padding: 20px 0;
+  }
+}
 
-    .skills-wrap {
-        padding: 20px 40px;
-    }
+@media screen and (max-width: 554px) {
+  .wrap {
+    padding: 90px 5px;
+  }
+  .skills-wrap {
+    margin: 0 auto;
+  }
 }

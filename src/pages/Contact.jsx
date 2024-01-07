@@ -1,11 +1,11 @@
-import "../styles/page.css"
+import '../styles/page.css';
 
 function Contact() {
-    return (
-        <div className="wrap">
-            <div>Kontakt</div>
-            </div>
-    )
+  return (
+    <div className='wrap'>
+      <div>Kontakt</div>
+    </div>
+  );
 }
 
 export default Contact;

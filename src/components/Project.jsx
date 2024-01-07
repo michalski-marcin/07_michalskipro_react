@@ -1,57 +1,102 @@
 import '../styles/project.css';
-import { projects } from '../data/projects';
-import { AnimatePresence, motion } from 'framer-motion';
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { useSpring, animated, config } from 'react-spring';
+import useMeasure from 'react-use-measure';
 import { MdOutlineArrowForwardIos } from 'react-icons/md';
 
-function Project() {
+function Project(project) {
+  const { index } = project;
+  const [isActive, setIsActive] = useState(false);
+  const handleClick = () => {
+    setIsActive((current) => !current);
+  };
+  const [measureRef, { height }] = useMeasure();
+
+  const styles = useSpring({
+    config: config.stiff,
+    from: {
+      height: 0,
+    },
+    to: {
+      height: isActive ? height : 0,
+    },
+  });
+  console.log(height);
   return (
-    
-    <div className='projects-container'>
-      
-      {projects.map((project, i) => (
-        <motion.div
-        key={project.id}
-          className='project-card'
-          initial={{ opacity: 0, y: 300 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 300 }}
-          transition={{ duration: 0.9, delay: i * 0.2, ease: 'backInOut' }}>
-          <div>
-            {/* <div className='project-img'>
-              <img
-                src={`../projectimg/${project.image}`}
-                alt='project'
-              />
-            </div> */}
-            <div className='project-card-top'>
-              <div className='project-title'>
-                <div>
-                  <MdOutlineArrowForwardIos  className='project arrow'/>
-                  <h3 class='blue'>{project.name}</h3>
-                </div>
+    <motion.div
+      key={project.id}
+      className='project-card'
+      initial={{ opacity: 0, y: 300 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 300 }}
+      transition={{ duration: 0.9, delay: index * 0.2, type: 'spring' }}>
+      <div
+        className='project-card-top'
+        transition={{
+          duration: 0.3,
+          height: {
+            duration: 0.3,
+            ease: 'easeOut',
+          },
+        }}>
+        <div className='project-title'>
+          <div
+            onClick={handleClick}
+            style={{ color: isActive ? 'var(--cr3)' : '' }}>
+            <MdOutlineArrowForwardIos
+              className='project arrow'
+              style={{
+                transform: isActive ? 'rotate(0)' : '',
+              }}
+            />
+            <h3 class='blue'>{project.name}</h3>
+          </div>
 
-                <div className='project-techs'>
-                  {project.technology.map((title) => {
-                    return (
-                      <div
-                        key={title}
-                        className='tech-img'>
-                        <img src={`./assets/icons/${title}`} />
-                      </div>
-                    );
-                  })}
-
-                  {project.commercial ? (
-                    <div>
-                      <p className='project-tech commercial'>Commercial</p>
-                    </div>
-                  ) : null}
+          <div className='project-techs'>
+            {project.technology.map((title) => {
+              return (
+                <div
+                  key={title}
+                  className='tech-img'>
+                  <img src={`./assets/icons/${title}`} />
                 </div>
+              );
+            })}
+
+            {project.commercial ? (
+              <div>
+                <p className='project-tech commercial'>Commercial</p>
               </div>
-              {/* <div className='project-description'>{project.description}</div> */}
+            ) : null}
+          </div>
+        </div>
+
+        <animated.div style={{ overflow: 'hidden', ...styles }}>
+          <div ref={measureRef} className='project-details'>
+            <div className='project-details-top'>
+              <div className='project-img'>
+                <img
+                  src={`../projectimg/${project.image}`}
+                  alt='project'
+                />
+              </div>
+              <div className='project-description' style={{ color: isActive ? 'var(--cr3)' : '' }}>{project.description}</div>
+            </div>
+            <div className='project-card-bottom'>
+              <div className='project-link'>
+                <a
+                  href={project.webpage}
+                  target='_blank'>
+                  Webpage
+                </a>
+              </div>
             </div>
           </div>
-          {/* <div className='project-card-bottom'>
+        </animated.div>
+      </div>
+
+      {/* <div className='project-card-bottom'>
             <div className='project-link'>
               <a
                 href={project.webpage}
@@ -60,7 +105,7 @@ function Project() {
               </a>
             </div>
           </div> */}
-          {/* <p>{project.description}</p>
+      {/* <p>{project.description}</p>
 
       
       if ({project.github}) {
@@ -75,10 +120,7 @@ function Project() {
         <p>
           <a href='#'>{project.webpage}</a>
         </p></div> */}
-        </motion.div>
-      ))}
-    </div>
-    
+    </motion.div>
   );
 }
 export default Project;
