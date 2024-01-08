@@ -9,6 +9,7 @@ nav {
   padding: 15px 60px;
   border-bottom: 1px solid var(--cr5);
   overflow: hidden;
+  transition: 0.2s;
 }
 
 .menu {

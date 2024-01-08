@@ -147,7 +147,7 @@ h2 span {
   }
 
   .about-container {
-    margin-top: 40px;
+    margin-top: 20px;
   }
 
   .about-bottom-container {
@@ -179,12 +179,12 @@ h2 span {
     line-height: 50px;
   }
   .about-bottom-container {
-    margin-top: 55px;
+    margin-top: 35px;
   }
   .about-bottom-intro {
     padding: 15px;
   }
   .about-bottom-socials {
-    margin-top: 30px;
+    margin-top: 5px;
   }
 }

@@ -76,7 +76,7 @@ function About() {
               <p className='p-comment'>// Short story</p>
               <p>
                 I’m a front-end developer, passionate about coding and focused
-                on building websites and apps in React.
+                on building websites and apps with React.
               </p>
             </motion.div>
           </div>

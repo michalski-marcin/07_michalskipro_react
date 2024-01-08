@@ -42,6 +42,7 @@ function Project(project) {
         }}>
         <div className='project-title'>
           <div
+            className='project-title-left'
             onClick={handleClick}
             style={{ color: isActive ? 'var(--cr3)' : '' }}>
             <MdOutlineArrowForwardIos
@@ -73,7 +74,9 @@ function Project(project) {
         </div>
 
         <animated.div style={{ overflow: 'hidden', ...styles }}>
-          <div ref={measureRef} className='project-details'>
+          <div
+            ref={measureRef}
+            className='project-details'>
             <div className='project-details-top'>
               <div className='project-img'>
                 <img
@@ -81,15 +84,34 @@ function Project(project) {
                   alt='project'
                 />
               </div>
-              <div className='project-description' style={{ color: isActive ? 'var(--cr3)' : '' }}>{project.description}</div>
+              <div
+                className='project-description'
+                style={{ color: isActive ? 'var(--cr3)' : '' }}>
+                {project.description}
+              </div>
             </div>
             <div className='project-card-bottom'>
               <div className='project-link'>
-                <a
-                  href={project.webpage}
-                  target='_blank'>
-                  Webpage
-                </a>
+                {project.github && (
+                  <div className='project-github'>
+                    <img
+                      src='ikona githuba'
+                      alt='git'
+                    />
+                    <p>
+                      <a href={project.github}>Code</a>
+                    </p>
+                  </div>
+                )}
+                <div className='project-website'>
+                  <img
+                    src='ikona web'
+                    alt=''
+                  />
+                  <p>
+                    <a href={project.webpage}>Website</a>
+                  </p>
+                </div>
               </div>
             </div>
           </div>

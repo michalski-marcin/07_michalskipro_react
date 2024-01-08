@@ -8,7 +8,7 @@ function Portfolio() {
   return (
     <div className='wrap-projects'>
       <FadeIn>
-        <div>// 2023</div>
+        <div className='projects-year'>// 2023</div>
       </FadeIn>
       <div className='projects-container'>
         {projects.map((project, i) => (

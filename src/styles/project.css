@@ -144,3 +144,57 @@
   color: var(--cr4);
   transition: 0.3s;
 }
+
+@media screen and (max-width: 768px) {
+  .project-card {
+    width: 95%;
+  }
+  .projects-container {
+    gap: 10px;
+  }
+  @media screen and (max-width: 500px) {
+    .projects-container {
+      margin-top: 40px;
+    }
+    .project-card {
+      width: 100%;
+    }
+    .tech-img img {
+      width: 16px;
+    }
+    .project-techs {
+      gap: 7px;
+      display: flex;
+      flex-wrap: wrap;
+      width: 32%;
+      justify-content: flex-end;
+    }
+    .commercial {
+      font-size: 10px;
+      padding: 1px 5px;
+    }
+    .project-card-top {
+      padding: 13px 11px;
+    }
+    .project-title-left {
+      display: flex;
+      align-items: center;
+    }
+    .project-title h3 {
+      font-size: 18px;
+    }
+    .project-title svg {
+      margin: 0 5px 0 0;
+    }
+    .project-details-top {
+      flex-direction: column;
+      padding: 0 5px;
+    }
+    .project-img img {
+      width: 100%;
+    }
+    .project-description {
+      padding: 0;
+    }
+  }
+}

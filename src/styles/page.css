@@ -49,7 +49,7 @@
 .skills-title {
   margin: auto;
   /* text-align: center; */
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 1080px) {
@@ -66,6 +66,9 @@
     padding: 120px 40px;
   }
 
+  .wrap-projects {
+    width: 90%;
+  }
   .skills-wrap {
     padding: 20px 40px;
   }
@@ -77,6 +80,10 @@
   .wrap {
     padding: 120px 40px 30px;
   }
+  .wrap-projects {
+    width: 100%;
+    padding: 120px 15px 0;
+  }
   .skills-wrap {
     width: 90%;
     padding: 20px 0;
@@ -85,7 +92,10 @@
 
 @media screen and (max-width: 554px) {
   .wrap {
-    padding: 90px 5px;
+    padding: 100px 5px 0;
+  }
+  .skills-title {
+    margin-bottom: 30px;
   }
   .skills-wrap {
     margin: 0 auto;
