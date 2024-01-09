@@ -1,5 +1,4 @@
 import '../styles/page.css';
-import { FadeIn } from '../components/Animations';
 import { motion } from 'framer-motion';
 import Skill from '../components/Skill';
 import { frontend, backend, tools } from '../data/skills';

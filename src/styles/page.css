@@ -4,14 +4,13 @@
   min-height: calc(100% - 60px);
   display: flex;
   flex-direction: column;
-  /* font-family: 'Roboto'; */
   overflow-x: hidden;
 }
 
 .wrap-projects {
   width: 65%;
   min-height: calc(100% - 60px);
-  padding: 150px 0 0;
+  padding: 150px 0 100px 0;
   margin: 0 auto;
 }
 
@@ -82,7 +81,7 @@
   }
   .wrap-projects {
     width: 100%;
-    padding: 120px 15px 0;
+    padding: 120px 15px 100px;
   }
   .skills-wrap {
     width: 90%;

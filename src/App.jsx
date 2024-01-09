@@ -1,6 +1,7 @@
+import profilePic from './assets/profilepic.svg';
 import './App.css';
 import Navbar from './components/Navbar';
-import About from './pages/about';
+import About from './pages/About';
 import Skills from './pages/Skills';
 import Portfolio from './pages/Portfolio';
 import { AnimatePresence } from 'framer-motion';
@@ -19,6 +20,12 @@ function App() {
   return (
     <>
       <Navbar />
+      <div className='profile-pic'>
+        <img
+          src={profilePic}
+          alt='ded'
+        />
+      </div>
       <AnimatePresence mode='wait'>
         <Routes
           key={location.pathname}
@@ -73,6 +80,8 @@ function App() {
             'button',
             '.link',
             '.project-title',
+            '.x-close-button',
+            '.skill-card',
           ]}
         />
       )}

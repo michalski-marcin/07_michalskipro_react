@@ -3,14 +3,13 @@
   flex-direction: column;
   gap: 20px;
   justify-content: center;
-  margin-top: 50px;
+  margin: 30px 0 50px;
 }
 
 .project-card {
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 650px;
   margin: auto;
   font-size: 14px;
   background-color: var(--cr6);
@@ -45,7 +44,7 @@
   display: flex;
   justify-content: space-between;
   position: relative;
-  color: var(--cr4);
+  color: var(--cr3);
 }
 
 .project-title h3 {
@@ -70,20 +69,25 @@
 }
 .project-card:hover svg,
 .project-card:hover h3 {
-  color: var(--cr3);
-}
-
-.project-card-bottom {
+  color: var(--cr2);
 }
 
 .project-link {
+  display: flex;
+  gap: 12px;
+  margin-top: 5px;
 }
 
 .project-link a {
-  color: #00adb5;
-  font-weight: 500;
+  color: var(--cr2);
+  font-weight: 300;
   font-size: 15px;
   transition: 0.3s;
+}
+
+.project-github:hover a,
+.project-website:hover a {
+  color: var(--cr8);
 }
 
 .project-techs {
@@ -131,9 +135,6 @@
   margin-top: 20px;
 }
 
-.project-img {
-}
-
 .project-img img {
   width: 200px;
   border-radius: 5px;
@@ -141,8 +142,38 @@
 
 .project-description {
   padding: 0 20px 0;
-  color: var(--cr4);
+  color: var(--cr3);
   transition: 0.3s;
+  white-space: pre-wrap;
+}
+
+.project-card-bottom {
+  margin-top: 10px;
+}
+
+.project-github,
+.project-website {
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.bx {
+  font-size: 20px;
+  margin-right: 3px;
+}
+.project-github,
+.project-website {
+  color: var(--cr2);
+}
+
+.project-github:hover,
+.project-website:hover {
+  color: var(--cr8);
+}
+
+.bx {
+  font-size: 22px;
 }
 
 @media screen and (max-width: 768px) {

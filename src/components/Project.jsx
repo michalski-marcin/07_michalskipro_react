@@ -7,7 +7,7 @@ import { MdOutlineArrowForwardIos } from 'react-icons/md';
 
 function Project(project) {
   const { index } = project;
-  const [isActive, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState(project.isFirst === true);
   const handleClick = () => {
     setIsActive((current) => !current);
   };
@@ -44,7 +44,7 @@ function Project(project) {
           <div
             className='project-title-left'
             onClick={handleClick}
-            style={{ color: isActive ? 'var(--cr3)' : '' }}>
+            style={{ color: isActive ? 'var(--cr2)' : '' }}>
             <MdOutlineArrowForwardIos
               className='project arrow'
               style={{
@@ -84,33 +84,27 @@ function Project(project) {
                   alt='project'
                 />
               </div>
-              <div
-                className='project-description'
-                style={{ color: isActive ? 'var(--cr3)' : '' }}>
-                {project.description}
-              </div>
+              <div className='project-description'>{project.description}</div>
             </div>
             <div className='project-card-bottom'>
               <div className='project-link'>
                 {project.github && (
                   <div className='project-github'>
-                    <img
-                      src='ikona githuba'
-                      alt='git'
-                    />
-                    <p>
-                      <a href={project.github}>Code</a>
-                    </p>
+                    <i class='bx bxl-github'></i>
+                    <a
+                      href={project.github}
+                      target='_blank'>
+                      Code
+                    </a>
                   </div>
                 )}
                 <div className='project-website'>
-                  <img
-                    src='ikona web'
-                    alt=''
-                  />
-                  <p>
-                    <a href={project.webpage}>Website</a>
-                  </p>
+                  <i class='bx bx-link'></i>
+                  <a
+                    href={project.webpage}
+                    target='_blank'>
+                    Website
+                  </a>
                 </div>
               </div>
             </div>

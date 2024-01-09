@@ -6,14 +6,13 @@
 }
 
 .hi-container {
-  /* padding-top: 10px; */
   width: 70%;
   margin: 0 auto;
 }
 
 .hi-container h1 {
   font-size: 18px;
-  color: var(--cr4);
+  color: var(--cr2);
   font-family: roboto mono;
   padding-bottom: 30px;
 }
@@ -23,7 +22,7 @@
   font-weight: 100;
   line-height: 80px;
   letter-spacing: 1px;
-  color: var(--cr3);
+  color: var(--cr2);
 }
 
 h2 span {
@@ -57,6 +56,9 @@ h2 span {
 
 .social-button i:hover {
   box-shadow: none;
+}
+.devicon-github-original {
+  font-size: 33px;
 }
 
 .social-button a {
@@ -114,12 +116,12 @@ h2 span {
   font-weight: 300;
   line-height: 25px;
   font-family: roboto mono;
-  color: var(--cr4);
+  color: var(--cr3);
 }
 
 .p-comment,
 .about-bottom-intro .p-comment {
-  color: var(--cr2);
+  color: var(--cr1);
   font-size: 18px;
   padding-bottom: 10px;
   font-weight: 200;

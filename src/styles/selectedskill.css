@@ -1,0 +1,12 @@
+.header {
+    display: flex;
+}
+
+.header img {
+    width: 100px;
+}
+
+.selected-skill-list {
+    display: flex;
+    flex-direction: column;
+}

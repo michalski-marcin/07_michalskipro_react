@@ -41,12 +41,16 @@ function About() {
               <p className='p-comment'>// More about me</p>
               <div className='social-buttons'>
                 <div className='social-button'>
-                  <a href='#'>
+                  <a
+                    href='https://github.com/michalski-marcin'
+                    target='_blank'>
                     <i class='devicon-github-original'></i>
                   </a>
                 </div>
                 <div className='social-button'>
-                  <a href='#'>
+                  <a
+                    href='https://www.linkedin.com/in/michalski-marcin/'
+                    target='_blank'>
                     <i class='devicon-linkedin-plain'></i>
                   </a>
                 </div>
