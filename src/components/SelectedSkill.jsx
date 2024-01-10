@@ -1,4 +1,5 @@
 import '../styles/selectedskill.css';
+
 function SelectedSkill(skill) {
   return (
     <div className='selected-skil'>

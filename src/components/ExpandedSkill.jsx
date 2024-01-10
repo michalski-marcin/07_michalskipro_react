@@ -1,2 +1,1 @@
-import "../styles/expanded-skill.css";
-
+import '../styles/expanded-skill.css';

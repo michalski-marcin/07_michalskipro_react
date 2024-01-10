@@ -1,3 +1,5 @@
+// description, details and courses are part for not implemented modal
+
 export const frontend = [
     {
         id: 1,
@@ -6,7 +8,7 @@ export const frontend = [
         description: 'opis technologii',
         details: ['jeden', 'dwa'],
         courses: ['Scrimba'],
-        
+
     },
     {
         id: 2,
@@ -15,7 +17,7 @@ export const frontend = [
         description: 'opis tech',
         details: ['jeden', 'dwa'],
         courses: ['Scrimba'],
-        
+
     },
     {
         id: 3,
@@ -24,7 +26,7 @@ export const frontend = [
         description: 'opis tech',
         details: ['jeden', 'dwa'],
         courses: ['Scrimba'],
-        
+
     },
     {
         id: 4,

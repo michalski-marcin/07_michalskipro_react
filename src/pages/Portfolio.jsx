@@ -3,6 +3,7 @@ import Project from '../components/Project';
 import { projects } from '../data/projects';
 import '../styles/project.css';
 import { FadeIn } from '../components/Animations';
+import { motion } from 'framer-motion';
 
 function Portfolio() {
   const projectsByYear = projects.reduce((acc, project) => {
@@ -14,6 +15,22 @@ function Portfolio() {
   const years = Object.keys(projectsByYear).reverse();
   return (
     <div className='wrap-projects'>
+      <motion.p
+        className='projects-intro'
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.5 }}>
+        On my{' '}
+        <a
+          href='https://github.com/michalski-marcin'
+          target='_blank'>
+          GitHub
+        </a>{' '}
+        page, you can find all my projects, including those I'm currently
+        working on. I'll highlight here the most important ones for a quick
+        overview.
+      </motion.p>
       {years.map((year, yearIndex) => (
         <div key={year}>
           <FadeIn delay={yearIndex * 0.05}>

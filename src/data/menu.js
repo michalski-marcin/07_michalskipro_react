@@ -11,6 +11,6 @@ const menuItems = [
         name: 'PORTFOLIO',
         active: false
     }
-   ];
+];
 
 export default menuItems

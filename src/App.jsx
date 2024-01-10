@@ -9,7 +9,7 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 import AnimatedCursor from 'react-animated-cursor';
 
 function App() {
-  const maxWidth = 1024; // px
+  const maxWidth = 1024;
   const isTouchDevice =
     'ontouchstart' in window ||
     navigator.maxTouchPoints > 0 ||

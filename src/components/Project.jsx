@@ -111,31 +111,6 @@ function Project(project) {
           </div>
         </animated.div>
       </div>
-
-      {/* <div className='project-card-bottom'>
-            <div className='project-link'>
-              <a
-                href={project.webpage}
-                target='_blank'>
-                Webpage
-              </a>
-            </div>
-          </div> */}
-      {/* <p>{project.description}</p>
-
-      
-      if ({project.github}) {
-      <div className='project-github'>
-        <img src='ikona githuba' alt='git' />
-        <p>
-          <a href='#'>{project.github}</a>
-        </p>
-      </div>}
-      <div className='project-website'>
-        <img src='ikona web' alt='' />
-        <p>
-          <a href='#'>{project.webpage}</a>
-        </p></div> */}
     </motion.div>
   );
 }
