@@ -65,6 +65,9 @@ function About() {
                   </div>
                 </div>
               </div>
+              <div className='mail-to'>
+                <a href='mailto:marcin@michalski.pro'>marcin@michalski.pro</a>
+              </div>
             </motion.div>
 
             <motion.div

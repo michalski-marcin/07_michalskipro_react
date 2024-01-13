@@ -47,7 +47,7 @@ h2 span {
 
 .social-buttons {
   display: flex;
-  margin-top: 5px;
+  margin-top: 12px;
 }
 
 .social-button i {
@@ -123,8 +123,26 @@ h2 span {
 .about-bottom-intro .p-comment {
   color: var(--cr1);
   font-size: 18px;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
   font-weight: 200;
+}
+
+.mail-to {
+  color: var(--cr8);
+  margin-top: 16px;
+  display: flex;
+  gap: 12px;
+}
+
+.mail-to a {
+  color: var(--cr2);
+  font-weight: 300;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.mail-to:hover a {
+  color: var(--cr8);
 }
 
 @media screen and (max-width: 1280px) {
@@ -181,12 +199,19 @@ h2 span {
     line-height: 50px;
   }
   .about-bottom-container {
-    margin-top: 35px;
+    margin-top: 45px;
   }
   .about-bottom-intro {
     padding: 15px;
   }
   .about-bottom-socials {
-    margin-top: 5px;
+    margin-top: 15px;
+  }
+  .mail-to {
+    justify-content: center;
+    margin-top: 18px;
+  }
+  .social-buttons {
+    justify-content: center;
   }
 }
