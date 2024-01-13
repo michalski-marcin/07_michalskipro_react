@@ -28,7 +28,7 @@ export const frontend = [
     {
         id: 5,
         image: 'sass-original.svg',
-        name: 'SASS',
+        name: 'Sass',
     },
     {
         id: 6,
