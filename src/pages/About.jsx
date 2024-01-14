@@ -11,7 +11,7 @@ function About() {
           <FadeIn>
             <h1>Hi, my name is</h1>
           </FadeIn>
-          <motion.div
+          <motion.div v
             initial={{ opacity: 0, x: 200 }}
             animate={{ opacity: 100, x: 0 }}
             exit={{ opacity: 0, x: 200 }}

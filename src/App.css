@@ -1,5 +1,5 @@
 .profile-pic img {
-  position: absolute;
+  position: fixed;
   width: 900px;
   bottom: 0px;
   right: 100px;
