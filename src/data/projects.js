@@ -4,6 +4,7 @@ export const projects = [
     {
         id: 103,
         isFirst: true,
+        type: 'website',
         image: 'kryptopaczka.jpeg',
         name: 'Kryptopaczka',
         year: '2024',
@@ -14,6 +15,7 @@ export const projects = [
     },
     {
         id: 102,
+        type: 'extension',
         image: 'tabmemo.jpg',
         name: 'TabMemo',
         year: '2023',
@@ -25,6 +27,7 @@ export const projects = [
     },
     {
         id: 101,
+        type: 'website',
         image: 'aai.png',
         name: 'ArtificialAI',
         year: '2023',
