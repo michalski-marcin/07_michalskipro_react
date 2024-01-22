@@ -66,6 +66,18 @@ h1 {
   line-height: 1.1;
 }
 
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--cr6);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--cr4);
+  border-radius: 10px;
+}
 
 @media screen and (max-width: 768px) {
   html {
