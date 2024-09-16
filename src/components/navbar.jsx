@@ -9,12 +9,14 @@ function Navbar() {
   let initState = '';
   if (location.pathname === '/') {
     initState = item[0].name;
-  } else if (location.pathname === '/skills') {
+  } else if (location.pathname === '/blog') {
     initState = item[1].name;
-  } else if (location.pathname === '/portfolio') {
+  } else if (location.pathname === '/skills') {
     initState = item[2].name;
-  } else {
+  } else if (location.pathname === '/portfolio') {
     initState = item[3].name;
+  } else {
+    initState = item[4].name;
   }
 
   const [activeLink, setActiveLink] = useState(initState);
@@ -46,8 +48,9 @@ function Navbar() {
           ifScrolled
             ? {}
             : {
-                background: 'rgba(20, 20, 20, 0.9)',
+                background: 'rgba(255, 255, 255, 0.1)',
                 backdropFilter: 'blur(7px)',
+                boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',
               }
         }>
         <img
@@ -71,7 +74,7 @@ function Navbar() {
                 className={
                   activeLink === item[1].name ? 'menu-link active' : 'menu-link'
                 }
-                to='/skills'
+                to='/blog'
                 onClick={handleClick}>
                 {item[1].name}
               </Link>
@@ -81,9 +84,19 @@ function Navbar() {
                 className={
                   activeLink === item[2].name ? 'menu-link active' : 'menu-link'
                 }
-                to='/portfolio'
+                to='/skills'
                 onClick={handleClick}>
                 {item[2].name}
+              </Link>
+            </li>
+            <li>
+              <Link
+                className={
+                  activeLink === item[3].name ? 'menu-link active' : 'menu-link'
+                }
+                to='/portfolio'
+                onClick={handleClick}>
+                {item[3].name}
               </Link>
             </li>
           </ul>

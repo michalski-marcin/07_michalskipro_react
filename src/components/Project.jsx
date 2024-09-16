@@ -40,12 +40,19 @@ function Project(project) {
             duration: 0.3,
             ease: 'easeOut',
           },
+          
+        }}
+        style={{
+          color: isActive ? 'var(--cr8)' : '',
+          boxShadow: isActive ? '0px 5px 10px rgba(0, 0, 0, 0.1)' : '' // Add shadow when active
         }}>
         <div className='project-title'>
           <div
             className='project-title-left'
             onClick={handleClick}
-            style={{ color: isActive ? 'var(--cr2)' : '' }}>
+            style={{ color: isActive ? 'var(--cr8)' : ''
+              
+             }}>
             <MdOutlineArrowForwardIos
               className='project arrow'
               style={{

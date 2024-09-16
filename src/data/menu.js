@@ -4,6 +4,10 @@ const menuItems = [
         active: true
     },
     {
+        name: 'BLOG',
+        active: false
+    },
+    {
         name: 'SKILLS',
         active: false
     },

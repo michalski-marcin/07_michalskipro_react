@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@react-spring/web": "^9.7.3",
+    "07_michalskipro_react": "file:",
     "framer-motion": "^10.16.14",
     "react": "^18.2.0",
     "react-animated-cursor": "^2.11.2",
@@ -28,6 +29,6 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.4",
-    "vite": "^5.0.0"
+    "vite": "^5.4.5"
   }
 }

@@ -13,7 +13,7 @@ const FadeIn = ({ children, delay = 0.1 }) => {
       initial='initial'
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -100 }}
-      transition={{ transition: 0.9, ease: [0.445, 0.05, 0.55, 0.95], delay }}>
+      transition={{ duration: 0.9, ease: [0.445, 0.05, 0.55, 0.95], delay }}>
       {children}
     </motion.div>
   );
