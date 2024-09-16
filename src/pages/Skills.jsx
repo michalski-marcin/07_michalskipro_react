@@ -47,7 +47,7 @@ function Skills() {
               ease: [0.445, 0.05, 0.55, 0.95],
               delay: 0.4,
             }}>
-           <tools     />
+            <div className='skills-title'>// TOOLS</div>
           </motion.div>
           <div className='skills-container'>
             <Skill skills={tools} />
@@ -59,5 +59,3 @@ function Skills() {
 }
 
 export default Skills;
-
-  

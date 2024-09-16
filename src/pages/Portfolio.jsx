@@ -26,10 +26,9 @@ function Portfolio() {
           href='https://github.com/michalski-marcin'
           target='_blank'>
           GitHub
-        </a>{' '}
-        page, you can find all my projects, including those I'm currently
-        working on. I'll highlight here the most important ones for a quick
-        overview.
+        </a>
+        , you can find all my projects, including those I'm currently working
+        on. I'll highlight here the most important ones for a quick overview.
       </motion.p>
       {years.map((year, yearIndex) => (
         <div key={year}>

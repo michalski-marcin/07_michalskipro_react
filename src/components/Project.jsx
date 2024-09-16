@@ -22,7 +22,8 @@ function Project(project) {
       height: isActive ? height : 0,
     },
   });
-  console.log(height);
+
+  const inProgress = project.inProgress ? ' | In Development' : '';
   return (
     <motion.div
       key={project.id}
@@ -51,7 +52,10 @@ function Project(project) {
                 transform: isActive ? 'rotate(0)' : '',
               }}
             />
-            <h3 class='blue'>{project.name}</h3>
+            <h3 class='blue'>
+              {project.name}
+              <span className='inprogress-span'> {inProgress}</span>
+            </h3>
           </div>
 
           <div className='project-techs'>
@@ -98,14 +102,16 @@ function Project(project) {
                     </a>
                   </div>
                 )}
-                <div className='project-website'>
-                  <i class='bx bx-link'></i>
-                  <a
-                    href={project.webpage}
-                    target='_blank'>
-                    Website
-                  </a>
-                </div>
+                {project.webpage && (
+                  <div className='project-website'>
+                    <i class='bx bx-link'></i>
+                    <a
+                      href={project.webpage}
+                      target='_blank'>
+                      Website
+                    </a>
+                  </div>
+                )}
               </div>
             </div>
           </div>
