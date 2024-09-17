@@ -5,18 +5,18 @@
   line-height: 1.5;
   font-weight: 300;
   color: var(--cr3);
-  background-color: #ebeae6;
+  background-color: #eeece8;
   background-attachment: fixed;
   
 
-  --cr1: #1c1b1b;
-  --cr2: #2d2b2b;
-  --cr3: #1c1a1a;
-  --cr4: #444343;
-  --cr5: #737270;
-  --cr6: #cbc9c6;
-  --cr7: #e9e8e5;
-  --cr8: #1b9397;
+  --cr1: #000000;
+  --cr2: #363635;
+  --cr3: #3a3838;
+  --cr4: #15150e;
+  --cr5: #a5a599;
+  --cr6: #e6e5df;
+  --cr7: #f0f0eb;
+  --cr8: #c8164b;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

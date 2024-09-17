@@ -27,7 +27,9 @@
 
 h2 span {
   font-weight: 500;
-  color: var(--cr8);
+  color: var(--cr2);
+  border-radius: 42px;
+  
 }
 
 .about-bottom-container {

@@ -15,8 +15,9 @@
   font-size: 14px;
   background-color: var(--cr7);
   border: var(--cr5) solid 1px;
-  border-radius: 8px;
+ 
   transition: 0.3s;
+
   /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); */
 }
 

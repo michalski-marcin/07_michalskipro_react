@@ -35,7 +35,8 @@ li {
   transition: 0.3s;
 }
 .menu-link:hover:not(.active) {
-  color: var(--cr2);
+  color: var(--cr5);
+  
 }
 
 .menu-link::after {
