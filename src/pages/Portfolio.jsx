@@ -32,7 +32,7 @@ function Portfolio() {
       </motion.p>
       {years.map((year, yearIndex) => (
         <div key={year}>
-          <FadeIn delay={yearIndex * 0.05}>
+          <FadeIn delay={yearIndex * 0.1} >
             <div className='projects-year'>{`// ${year}`}</div>
           </FadeIn>
           <div className='projects-container'>

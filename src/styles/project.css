@@ -192,14 +192,15 @@
       width: 100%;
     }
     .tech-img img {
-      width: 16px;
+      width: 20px;
     }
     .project-techs {
       gap: 7px;
       display: flex;
-      flex-wrap: wrap;
-      width: 32%;
-      justify-content: flex-end;
+      
+      margin-left: 7px;
+      margin-top: 8px;
+      
     }
     .commercial {
       font-size: 10px;
@@ -207,6 +208,11 @@
     }
     .project-card-top {
       padding: 13px 11px;
+      
+    }
+
+    .project-title {
+      flex-direction: column;
     }
     .project-title-left {
       display: flex;

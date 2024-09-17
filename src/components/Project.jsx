@@ -14,7 +14,7 @@ function Project(project) {
   const [measureRef, { height }] = useMeasure();
 
   const styles = useSpring({
-    config: config.stiff,
+    config: config.default,
     from: {
       height: 0,
     },
@@ -28,10 +28,10 @@ function Project(project) {
     <motion.div
       key={project.id}
       className='project-card'
-      initial={{ opacity: 0, y: 300 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: 300 }}
-      transition={{ duration: 0.9, delay: index * 0.2, type: 'spring' }}>
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1}}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.9, delay: index * 0.2 }}>
       <div
         className='project-card-top'
         transition={{
