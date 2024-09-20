@@ -5,6 +5,7 @@ import About from './pages/About';
 import Blog from './pages/blog';
 import Skills from './pages/Skills';
 import Portfolio from './pages/Portfolio';
+import PostDetail from './components/PostDetail'
 import { AnimatePresence } from 'framer-motion';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import AnimatedCursor from 'react-animated-cursor';
@@ -23,30 +24,13 @@ function App() {
       <Navbar />
      
       <AnimatePresence mode='wait'>
-        <Routes
-          key={location.pathname}
-          location={location}>
-          <Route
-            path='/'
-            exact
-            Component={About}
-          />
-          <Route
-            path='/blog'
-            exact
-            Component={Blog}
-          />
-          <Route
-            path='/skills'
-            exact
-            Component={Skills}
-          />
-          <Route
-            path='/portfolio'
-            exact
-            Component={Portfolio}
-          />
-        </Routes>
+      <Routes>
+        <Route path="/" element={<About />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/post/:id" element={<PostDetail />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+      </Routes>
       </AnimatePresence>
       {!isMobileTouchDevice && (
         <AnimatedCursor
@@ -89,5 +73,4 @@ function App() {
     </>
   );
 }
-
 export default App;

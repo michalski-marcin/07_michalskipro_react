@@ -1,53 +1,42 @@
-import '../styles/page.css';
-import Project from '../components/Project';
-import { projects } from '../data/projects';
-import '../styles/project.css';
+// import '../styles/page.css';
+import React, { useEffect, useState } from 'react';
+
+
+import '../styles/blog.css';
+
 import { FadeIn } from '../components/Animations';
 import { motion } from 'framer-motion';
+import PostList from '../components/PostList';
+import { Link } from 'react-router-dom';
+import { getPosts } from '../components/getData';
+
+
 
 function Blog() {
-  const projectsByYear = projects.reduce((acc, project) => {
-    const year = project.year || 'Unknown';
-    acc[year] = acc[year] || [];
-    acc[year].push(project);
-    return acc;
-  }, {});
-  const years = Object.keys(projectsByYear).reverse();
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    const fetchPosts = async () => {
+      const data = await getPosts(); // Fetch posts using the getPosts function
+      setPosts(data);
+    };
+    fetchPosts();
+  }, []);
+
   return (
-    <div className='wrap-projects'>
-      <motion.p
-        className='projects-intro'
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 0.5 }}>
-        On my{' '}
-        <a
-          href='https://github.com/michalski-marcin'
-          target='_blank'>
-          GitHub
-        </a>
-        , you can find all my projects, including those I'm currently working
-        on. I'll highlight here the most important ones for a quick overview.
-      </motion.p>
-      {years.map((year, yearIndex) => (
-        <div key={year}>
-          <FadeIn delay={yearIndex * 0.05}>
-            <div className='projects-year'>{`// ${year}`}</div>
-          </FadeIn>
-          <div className='projects-container'>
-            {projectsByYear[year].map((project, projectIndex) => (
-              <Project
-                key={project.id}
-                {...project}
-                index={yearIndex * projectsByYear[year].length + projectIndex}
-              />
-            ))}
-          </div>
+    <div className='wrap'>
+     <div className='posts'>
+     {posts.map((post) => (
+        <div key={post.id} className='post'>
+          <Link to={`/post/${post.id}`}>
+            <h2>{post.title.rendered}</h2>
+          </Link>
+          <p>{post.excerpt.rendered}</p>
         </div>
       ))}
+     </div>
+      
     </div>
   );
 }
-
 export default Blog;
