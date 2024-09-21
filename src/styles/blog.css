@@ -4,6 +4,7 @@
   gap: 20px;
   width: 90%;
   margin: auto;
+  margin-bottom: 50px;
   justify-content: center;
 }
 
@@ -18,15 +19,20 @@
   background-color: var(--cr7);
   border: var(--cr5) solid 1px;
   flex: 1 1 320px;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.1);
   /* overflow: hidden; Allow flexible resizing */
   /* Add padding and margin if necessary */
+ 
 }
+
+
 
 .post-card img {
   width: 100%;
   
   height: 180px;
   object-fit: cover;
+  
 }
 
 .post-card-text {
@@ -53,6 +59,38 @@
   font-style: italic;
   /* Pushes the date to the bottom of the card */
   /* Lighter color for the date */
+}
+
+.category-filter {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+
+.category-checkbox input[type="checkbox"] {
+  display: none; /* Hide the actual checkbox */
+}
+
+.category-box {
+  display: inline-block;
+  padding: 1px 10px;
+  font-size: 12px;
+  background-color: var(--cr7);
+  color: var(--cr2);
+  border: 1px var(--cr5) solid; 
+  transition: background-color 0.2s ease;
+}
+
+.category-checkbox input[type="checkbox"]:checked + .category-box {
+  background-color: var(--cr8);
+  color: var(--cr7); /* Change color when selected */
+}
+
+.category-box:hover {
+  background-color: var(--cr6);
+  
 }
 
 

@@ -1,23 +1,26 @@
 .skill-card {
-  width: 130px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 27px 27px 20px;
+  width: 140px;
+  position: relative;
+  
+  padding: 2px 2px;
   background-color: var(--cr7);
   
   border: var(--cr5) solid 1px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
 }
 
 p {
   font-weight: 200;
+  text-align: center;
   font-size: 12px;
   color: var(--cr3);
 }
 
 .skill-card img {
-  margin-bottom: 12px;
+  width: 18px;
+  position: absolute;
+  left: 3px;
 }
 
 /* .expanded-skill {

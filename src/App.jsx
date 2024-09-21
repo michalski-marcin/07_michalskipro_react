@@ -67,6 +67,8 @@ function App() {
             '.project-title',
             '.x-close-button',
             '.skill-card',
+            '.post-card',
+            '.category-box',
           ]}
         />
       )}

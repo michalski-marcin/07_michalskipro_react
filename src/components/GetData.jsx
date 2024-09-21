@@ -1,6 +1,8 @@
 const appUrl = "http://blog.michalski.pro/wp-json/wp/v2/";
+
+// Fetch posts with embedded media
 const getPosts = async () => {
-  const response = await fetch(`${appUrl}posts?_embed`);  // Fetch posts with embedded media
+  const response = await fetch(`${appUrl}posts?_embed`);
   if (!response.ok) {
     throw new Error('Failed to fetch posts');
   }
@@ -16,4 +18,17 @@ const getPosts = async () => {
       : null
   }));
 };
-export { appUrl, getPosts };
+
+// Fetch categories by IDs
+const getCategories = async (categoryIds) => {
+  const response = await fetch(`${appUrl}categories?include=${categoryIds.join(',')}`);
+  if (!response.ok) {
+    throw new Error('Failed to fetch categories');
+  }
+  const categories = await response.json();
+
+  console.log(categories); // Log the categories to verify data
+  return categories; // Return the category data
+};
+
+export { appUrl, getPosts, getCategories };
