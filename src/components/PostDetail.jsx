@@ -11,7 +11,8 @@ function PostDetail() {
     const fetchPost = async () => {
       try {
         const posts = await getPosts();  // Await the posts data
-        const foundPost = posts.find(p => p.id === parseInt(id));  // Find the post by ID
+        const foundPost = posts.find(p => p.id === parseInt(id)); 
+        console.log(posts); // Find the post by ID
         if (foundPost) {
           setPost(foundPost);  // Set the post state if found
         } else {
