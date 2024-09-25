@@ -41,6 +41,10 @@
   flex-direction: column;
   justify-content: space-between; /* Space items evenly */
   flex-grow: 1; 
+
+}
+.post-card-text p {
+  text-align: left;
 }
 
 .post-card-top {
@@ -91,6 +95,11 @@
 .category-box:hover {
   background-color: var(--cr6);
   
+}
+
+.post-content p{
+  text-align: left;
+  margin: 10px 0;
 }
 
 

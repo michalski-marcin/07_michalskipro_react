@@ -97,7 +97,7 @@ function Blog() {
                   alt={post.title.rendered}
                 />
                 <div className='post-card-text'>
-                  <h4>{post.title.rendered}</h4>
+                  <h4>{stripHtml(post.title.rendered)}</h4>
                   <p>{truncateText(stripHtml(post.excerpt.rendered), 200)}</p>
                 </div>
               </div>

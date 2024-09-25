@@ -30,6 +30,10 @@
   padding: 0;
 }
 
+p {
+  text-align: left;
+}
+
 h1 span {
   color: var(--cr8);
   font-family: Roboto;

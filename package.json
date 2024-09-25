@@ -13,6 +13,7 @@
     "@react-spring/web": "^9.7.3",
     "07_michalskipro_react": "file:",
     "framer-motion": "^10.16.14",
+    "prismjs": "^1.29.0",
     "react": "^18.2.0",
     "react-animated-cursor": "^2.11.2",
     "react-collapsed": "^4.1.2",

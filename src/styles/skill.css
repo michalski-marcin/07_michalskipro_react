@@ -1,16 +1,15 @@
 .skill-card {
   width: 140px;
   position: relative;
-  
+
   padding: 2px 2px;
   background-color: var(--cr7);
-  
+
   border: var(--cr5) solid 1px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  
 }
 
-p {
+.skills-container p {
   font-weight: 200;
   text-align: center;
   font-size: 12px;

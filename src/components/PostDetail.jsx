@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getPosts } from './getData';  // Ensure getPosts is correctly defined
+import '../styles/blog.css';
+import '../styles/post.css';
 
 function PostDetail() {
   const { id } = useParams();  // Get the post ID from the URL
@@ -39,7 +41,7 @@ function PostDetail() {
   return (
     <div className='wrap'>
       <h2>{post.title.rendered}</h2>
-      <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
+      <div className='post-content' dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
     </div>
   );
 }
