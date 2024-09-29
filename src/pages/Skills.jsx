@@ -13,10 +13,10 @@ function Skills() {
             animate={{ opacity: 200, x: 0 }}
             exit={{ opacity: 0, x: -200 }}
             transition={{ duration: 0.5, ease: [0.445, 0.05, 0.55, 0.95] }}>
-            <div className='skills-title'>// FRONT END</div>
+            <div className='skills-title'>// BACK END</div>
           </motion.div>
           <div className='skills-container'>
-            <Skill skills={frontend} />
+            <Skill skills={backend} />
           </div>
         </div>
 
@@ -30,10 +30,10 @@ function Skills() {
               ease: [0.445, 0.05, 0.55, 0.95],
               delay: 0.2,
             }}>
-            <div className='skills-title'>// BACK END</div>
+            <div className='skills-title'>// FRONT END</div>
           </motion.div>
           <div className='skills-container'>
-            <Skill skills={backend} />
+            <Skill skills={frontend} />
           </div>
         </div>
 

@@ -64,9 +64,9 @@ function App() {
             'textarea',
             'button',
             '.link',
-            '.project-title',
+            '.project-title-left',
             '.x-close-button',
-            '.skill-card',
+            
             '.post-card',
             '.category-box',
           ]}

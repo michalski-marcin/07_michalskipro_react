@@ -29,7 +29,7 @@ function Project(project) {
       key={project.id}
       className='project-card'
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1}}
+      animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.9, delay: index * 0.2 }}>
       <div
@@ -40,26 +40,22 @@ function Project(project) {
             duration: 0.3,
             ease: 'easeOut',
           },
-          
         }}
         style={{
           color: isActive ? 'var(--cr8)' : '',
-          boxShadow: isActive ? '0px 5px 10px rgba(0, 0, 0, 0.1)' : '' // Add shadow when active
+          boxShadow: isActive ? '0px 5px 10px rgba(0, 0, 0, 0.1)' : '', // Add shadow when active
         }}>
         <div className='project-title'>
           <div
             className='project-title-left'
-            onClick={handleClick}
-            style={{ color: isActive ? 'var(--cr8)' : ''
-              
-             }}>
+            onClick={handleClick}>
             <MdOutlineArrowForwardIos
               className='project arrow'
               style={{
                 transform: isActive ? 'rotate(0)' : '',
               }}
             />
-            <h3 class='blue'>
+            <h3 className='blue'>
               {project.name}
               <span className='inprogress-span'> {inProgress}</span>
             </h3>

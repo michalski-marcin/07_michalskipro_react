@@ -1,5 +1,6 @@
 import '../styles/page.css';
 import '../styles/about.css';
+import { FaSquareGithub, FaLinkedin, FaSquareTwitter } from "react-icons/fa6";
 import { FadeIn } from '../components/Animations';
 import { motion } from 'framer-motion';
 
@@ -44,14 +45,23 @@ function About() {
                   <a
                     href='https://github.com/michalski-marcin'
                     target='_blank'>
-                    <i class='devicon-github-original'></i>
+                    <FaSquareGithub className='social-icon' />
+
                   </a>
                 </div>
                 <div className='social-button'>
                   <a
                     href='https://www.linkedin.com/in/michalski-marcin/'
                     target='_blank'>
-                    <i class='devicon-linkedin-plain'></i>
+                    <FaLinkedin className='social-icon' />
+                  </a>
+                </div>
+                <div className='social-button'>
+                  <a
+                    href='https://github.com/michalski-marcin'
+                    target='_blank'>
+                    <FaSquareTwitter className='social-icon' />
+
                   </a>
                 </div>
                 <div className='social-button resume'>

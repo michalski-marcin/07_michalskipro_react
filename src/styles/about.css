@@ -1,8 +1,9 @@
 .about-container {
   display: flex;
   justify-content: space-between;
-
-  margin: 70px auto 0;
+  
+  margin: 40px auto 0;
+  
 }
 
 .hi-container {
@@ -15,6 +16,7 @@
   color: var(--cr2);
   font-family: roboto mono;
   padding-bottom: 30px;
+  font-weight: 300;
 }
 
 .hi-container h2 {
@@ -33,9 +35,10 @@ h2 span {
 }
 
 .about-bottom-container {
-  margin: 100px auto;
+  margin: 70px auto;
   display: flex;
   justify-content: space-between;
+  
 }
 
 .about-bottom-socials {
@@ -52,31 +55,39 @@ h2 span {
   margin-top: 12px;
 }
 
-.social-button i {
+/* .social-button i {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
+  background-color: var(--cr6);
+} */
 
-.social-button i:hover {
+/* .social-button i:hover {
   box-shadow: none;
-}
+} */
 .devicon-github-original {
   font-size: 33px;
 }
 
 .social-button a {
-  margin: 0 20px 5px 0;
+  margin: 0 10px 5px 0;
   color: var(--cr3);
-  font-size: 33px;
-  line-height: 32px;
+  display: block;
+  height: 40px;
+  
   font-weight: 300;
   transition: 0.4s;
+  
+}
+
+.social-icon {
+  
+  font-size: 40px;
 }
 
 .social-button a:hover {
   color: var(--cr8);
 }
 .download-resume {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .download-resume:hover {
@@ -102,15 +113,17 @@ h2 span {
 
 .resume i {
   font-size: 20px;
+  box-shadow: 0 0;
+  background-color: initial;
 }
 
 .about-bottom-intro {
   width: 49%;
-  background-color: var(--cr6);
-  border-radius: 10px;
-  border: var(--cr5) solid 1px;
+  /* background-color: var(--cr7); */
+  /* border-radius: 5px; */
+  /* border: var(--cr5) solid 1px; */
   padding: 20px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1); */
 }
 
 .about-bottom-intro p {
@@ -127,20 +140,23 @@ h2 span {
   font-size: 18px;
   padding-bottom: 12px;
   font-weight: 200;
+  font-family: 'Roboto Mono';
 }
 
-.mail-to {
+/* .mail-to {
   color: var(--cr8);
   margin-top: 16px;
   display: flex;
   gap: 12px;
-}
+} */
 
 .mail-to a {
+  margin-top: 16px;
   color: var(--cr2);
-  font-weight: 300;
+  font-weight: 400;
   font-size: 18px;
   transition: 0.3s;
+  font-family: 'Roboto Mono';
 }
 
 .mail-to:hover a {

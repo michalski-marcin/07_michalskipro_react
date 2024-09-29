@@ -15,7 +15,7 @@
   font-size: 14px;
   background-color: var(--cr7);
   border: var(--cr5) solid 1px;
- 
+  border-radius: 5px;
   transition: 0.3s;
 
   /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); */
@@ -54,16 +54,20 @@
   transition: 0.3s;
 }
 
+.project-title:hover {
+  color: var(--cr8);
+}
+
+
+
 .project-title svg {
   transform: rotate(90deg);
   margin-right: 10px;
   transition: 0.3s;
 }
 
-.project-card:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-.project-card:hover svg,
+
+
 .project-card:hover h3 {
   color: var(--cr2);
 }
@@ -117,11 +121,12 @@
 }
 
 .commercial {
-  background: var(--cr8);
+  background: var(--cr6);
   font-weight: 500;
   display: inline-block;
   padding: 2px 8px;
-  color: #222831;
+  color: var(--cr2);
+  border: 1px solid var(--cr5);
   font-size: 12px;
   border-radius: 3px;
 }

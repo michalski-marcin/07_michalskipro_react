@@ -24,14 +24,21 @@
   background-color: var(--cr7);
   border: var(--cr5) solid 1px;
   flex: 1 1 320px;
-  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.1);
-  /* overflow: hidden; Allow flexible resizing */
+  border-radius: 5px;
+  overflow: hidden; 
+  
+  
   /* Add padding and margin if necessary */
  
 }
 
+.post-card:hover h4 {
+  color: var(--cr8); /* Replace with your desired hover color */
+}
+
 .post-card h4 {
   font-size: 15px;
+  transition: .3s;
 }
 
 .post-card p {
@@ -45,6 +52,7 @@
   
   height: 170px;
   object-fit: cover;
+  
   
 }
 
@@ -97,6 +105,7 @@
   background-color: var(--cr7);
   color: var(--cr2);
   border: 1px var(--cr5) solid; 
+  border-radius: 3px;
   transition: background-color 0.2s ease;
 }
 
@@ -127,6 +136,7 @@
 pre.wp-block-code.language-java {
   margin: 15px 0 10px;
   padding: 12px 15px;
+  border: 1px solid var(--cr5);
 }
 
 

@@ -1,13 +1,11 @@
-// description, details and courses are part for not implemented modal
+
 
 export const frontend = [
     {
         id: 1,
         image: 'react-original.svg',
         name: 'React',
-        description: 'opis technologii',
-        details: ['jeden', 'dwa'],
-        courses: ['Scrimba'],
+        
 
     },
     {
@@ -40,25 +38,31 @@ export const frontend = [
         image: 'html5-original.svg',
         name: 'HTML',
     },
-    {
-        id: 8,
-        image: 'wordpress-plain.svg',
-        name: 'WordPress',
-    },
+    
 
 ];
 
 export const backend = [
     {
         id: 1,
-        image: 'nodejs-original.svg',
-        name: 'Node.js',
+        image: 'java-original.svg',
+        name: 'Java',
     },
     {
         id: 2,
-        image: 'firebase-plain.svg',
-        name: 'FireBase',
+        image: 'spring-original.svg',
+        name: 'Spring',
     },
+    {
+        id: 3,
+        image: 'mysql-original.svg',
+        name: 'MySQL',
+    },
+    // {
+    //     id: 4,
+    //     image: 'nodejs-original.svg',
+    //     name: 'MySQL',
+    // },
 ];
 
 export const tools = [
@@ -69,21 +73,31 @@ export const tools = [
     },
     {
         id: 2,
+        image: 'github-original.svg',
+        name: 'GitHub',
+    },
+    {
+        id: 3,
+        image: 'intellij.svg',
+        name: 'IntelliJ',
+    },
+    {
+        id: 4,
         image: 'vscode-original.svg',
         name: 'VSCode',
     },
     {
-        id: 3,
+        id: 4,
         image: 'figma-original.svg',
         name: 'Figma',
     },
     {
-        id: 4,
+        id: 5,
         image: 'canva-original.svg',
         name: 'Canva',
     },
     {
-        id: 5,
+        id: 6,
         image: 'photoshop-plain.svg',
         name: 'Photoshop',
     },

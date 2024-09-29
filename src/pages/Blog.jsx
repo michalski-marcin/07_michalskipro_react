@@ -88,7 +88,7 @@ function Blog() {
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.7 }}
           transition={{ duration: 0.2, delay: i * 0.07, ease: 'easeInOut' }}
-          
+          whileHover={{ y: -5, scale: 1.01, boxShadow: "0 3px 4px rgba(0, 0, 0, 0.1)" }}
           >
               {/* Display the image on top of the card */}
               <div className='post-card-top'>
