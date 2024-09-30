@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import '../styles/blog.css';
 import { Link } from 'react-router-dom';
-import { getPosts, getCategories } from '../components/getData';
+import { getPosts, getCategories } from '../components/GetData';
 import { motion } from 'framer-motion';
 
 function Blog() {

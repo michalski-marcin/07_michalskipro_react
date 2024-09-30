@@ -12,7 +12,7 @@ function About() {
           <FadeIn>
             <h1>Hi, my name is</h1>
           </FadeIn>
-          <motion.div v
+          <motion.div
             initial={{ opacity: 0, x: 200 }}
             animate={{ opacity: 100, x: 0 }}
             exit={{ opacity: 0, x: 200 }}
@@ -39,12 +39,12 @@ function About() {
                 delay: 0.35,
                 ease: [0.445, 0.05, 0.55, 0.95],
               }}>
-              <p className='p-comment'>// More about me</p>
+              <p className='p-comment'>{`// More about me`}</p>
               <div className='social-buttons'>
                 <div className='social-button'>
                   <a
                     href='https://github.com/michalski-marcin'
-                    target='_blank'>
+                    target='_blank' rel="noreferrer">
                     <FaSquareGithub className='social-icon' />
 
                   </a>
@@ -52,14 +52,14 @@ function About() {
                 <div className='social-button'>
                   <a
                     href='https://www.linkedin.com/in/michalski-marcin/'
-                    target='_blank'>
+                    target='_blank' rel="noreferrer">
                     <FaLinkedin className='social-icon' />
                   </a>
                 </div>
                 <div className='social-button'>
                   <a
-                    href='https://github.com/michalski-marcin'
-                    target='_blank'>
+                    href='https://x.com/mkamichalski'
+                    target='_blank' rel="noreferrer">
                     <FaSquareTwitter className='social-icon' />
 
                   </a>
@@ -70,7 +70,7 @@ function About() {
                     <a
                       href='./resume.pdf'
                       download='marcin-michalski-resume'>
-                      <i class='bx bxs-download'></i>RESUME
+                      <i className='bx bxs-download'></i>RESUME
                     </a>
                   </div>
                 </div>
@@ -90,9 +90,9 @@ function About() {
                 delay: 0.45,
                 ease: [0.445, 0.05, 0.55, 0.95],
               }}>
-              <p className='p-comment'>// Short story</p>
+              <p className='p-comment'>{`// Short story`}</p>
               <p>
-                I’m a front-end developer, passionate about coding and focused
+                I'm a front-end developer, passionate about coding and focused
                 on building websites and apps with React.
               </p>
             </motion.div>
@@ -101,6 +101,4 @@ function About() {
       </section>
     </div>
   );
-}
-
-export default About;
+}export default About;

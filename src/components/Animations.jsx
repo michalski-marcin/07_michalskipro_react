@@ -23,12 +23,16 @@ const FadeOpacity = ({ children }) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      animate={{ opacity: 100 }}
+      animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}>
       {children}
     </motion.div>
   );
+};
+
+FadeOpacity.propTypes = {
+  children: PropTypes.node.isRequired,
 };
 
 export { FadeIn, FadeOpacity };

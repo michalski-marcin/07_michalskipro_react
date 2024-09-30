@@ -7,7 +7,7 @@ import Skills from './pages/Skills';
 import Portfolio from './pages/Portfolio';
 import PostDetail from './components/PostDetail'
 import { AnimatePresence } from 'framer-motion';
-import { Route, Routes, useLocation } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import AnimatedCursor from 'react-animated-cursor';
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
     navigator.msMaxTouchPoints > 0;
 
   const isMobileTouchDevice = isTouchDevice && window.innerWidth < maxWidth;
-  const location = useLocation();
+  
   return (
     <>
       <Navbar />

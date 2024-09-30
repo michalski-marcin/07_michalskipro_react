@@ -24,7 +24,7 @@ function Portfolio() {
         On my{' '}
         <a
           href='https://github.com/michalski-marcin'
-          target='_blank'>
+          target='_blank' rel="noreferrer">
           GitHub
         </a>
         , you can find all my projects, including those I'm currently working
