@@ -1,4 +1,4 @@
-const appUrl = "http://blog.michalski.pro/wp-json/wp/v2/";
+const appUrl = "https://blog.michalski.pro/wp-json/wp/v2/";
 
 // Fetch posts with embedded media
 const getPosts = async () => {
