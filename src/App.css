@@ -1,7 +1,7 @@
 .profile-pic img {
   position: fixed;
   width: 900px;
-  bottom: 0px;
+  bottom: -18px;
   right: 100px;
   z-index: -10;
 }
