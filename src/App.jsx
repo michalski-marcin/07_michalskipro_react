@@ -22,7 +22,12 @@ function App() {
   return (
     <>
       <Navbar />
-     
+      <div className='profile-pic'>
+        <img
+          src={profilePic}
+          alt='ded'
+      />
+      </div>
       <AnimatePresence mode='wait'>
       <Routes>
         <Route path="/" element={<About />} />
