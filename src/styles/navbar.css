@@ -18,7 +18,6 @@ nav {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  
 }
 
 ul {
@@ -31,14 +30,14 @@ li {
   cursor: pointer;
   position: relative;
 }
+
 .menu-link {
   color: var(--cr3);
   transition: 0.3s;
-  
 }
+
 .menu-link:hover:not(.active) {
   color: var(--cr5);
-  
 }
 
 .menu-link::after {
@@ -57,10 +56,12 @@ li {
   opacity: 1;
   background-color: var(--cr2);
 }
+
 .active {
   color: var(--cr8);
   font-weight: 500;
 }
+
 .active::after {
   transform: translateY(12px);
   opacity: 1;
