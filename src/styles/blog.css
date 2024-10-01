@@ -4,13 +4,12 @@
 
 .posts {
   display: flex;
-  flex-wrap: wrap; /* Allow cards to wrap */
+  flex-wrap: wrap; 
   gap: 20px;
   width: 90%;
   margin: auto;
   margin-bottom: 50px;
   justify-content: center;
-  
 }
 
 .post-card {
@@ -18,7 +17,6 @@
   flex-direction: column;
   justify-content: space-between;
   flex-basis: calc(33% - 20px);
-  /* max-width: calc(30% - 20px); */
   max-width: 320px; 
   height: 400px;
   background-color: var(--cr7);
@@ -26,14 +24,10 @@
   flex: 1 1 320px;
   border-radius: 5px;
   overflow: hidden; 
-  
-  
-  /* Add padding and margin if necessary */
- 
 }
 
 .post-card:hover h4 {
-  color: var(--cr8); /* Replace with your desired hover color */
+  color: var(--cr8); 
 }
 
 .post-card h4 {
@@ -45,32 +39,27 @@
   font-size: 14px;
 }
 
-
-
 .post-card img {
   width: 100%;
-  
   height: 170px;
   object-fit: cover;
-  
-  
 }
 
 .post-card-text {
   padding: 0 10px 10px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Space items evenly */
+  justify-content: space-between; 
   flex-grow: 1; 
-
 }
+
 .post-card-text p {
   text-align: left;
 }
 
 .post-card-top {
   margin-bottom: auto; 
-  flex-grow: 1;/* Pushes the date to the bottom */
+  flex-grow: 1;/
 }
 
 .post-card-text h4 {
@@ -78,12 +67,9 @@
 }
 
 .post-date {
-  /* margin-top: auto;  */
   margin-left: auto;
   padding: 0 10px;
   font-style: italic;
-  /* Pushes the date to the bottom of the card */
-  /* Lighter color for the date */
 }
 
 .category-filter {
@@ -92,10 +78,8 @@
   gap: 15px;
   margin-bottom: 50px;
 }
-
-
 .category-checkbox input[type="checkbox"] {
-  display: none; /* Hide the actual checkbox */
+  display: none; 
 }
 
 .category-box {
@@ -111,12 +95,11 @@
 
 .category-checkbox input[type="checkbox"]:checked + .category-box {
   background-color: var(--cr8);
-  color: var(--cr7); /* Change color when selected */
+  color: var(--cr7); 
 }
 
 .category-box:hover {
   background-color: var(--cr6);
-  
 }
 
 .post-wrap {
@@ -131,9 +114,7 @@
   margin-bottom: 30px;
 }
 
-
-
-pre.wp-block-code.language-java {
+pre.wp-block-code.language-java { 
   margin: 15px 0 10px;
   padding: 12px 15px;
   border: 1px solid var(--cr5);
@@ -143,13 +124,13 @@ pre.wp-block-code.language-java {
 
 @media (max-width: 768px) {
   .post-card {
-    flex-basis: calc(50% - 20px); /* Two cards per row */
-    max-width: none; /* Remove max-width constraint */
+    flex-basis: calc(50% - 20px); 
+    max-width: none; */
   }
 }
 
 @media (max-width: 480px) {
   .post-card {
-    flex-basis: 100%; /* One card per row */
+    flex-basis: 100%; 
   }
 }
