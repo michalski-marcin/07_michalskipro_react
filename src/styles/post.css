@@ -7,20 +7,19 @@
   object-fit: cover;
   margin-bottom: 25px;
 }
+
 .post-content p {
   font-size: 15px;
   line-height: 1.6;
   margin-bottom: 10px;
 }
 
-/* Style the <h5> tags */
 .post-content h5 {
   font-size: 17px;
   margin: 2rem 0 1rem;
   font-weight: bold;
 }
 
-/* Style lists */
 .post-content ul {
   margin-left: 20px;
 }
@@ -28,22 +27,19 @@
 .post-content ul li {
   list-style: square;
   display: list-item;
-  margin-bottom: 1px; /* Space between list items */
-  line-height: 1.5; /* Improve readability */
+  margin-bottom: 1px; 
+  line-height: 1.5; 
   font-size: 15px;
 }
 
 .post-content ul,
 .post-content ol {
   margin: 0;
-  padding-left: 20px; /* Indent lists */
+  padding-left: 20px; 
   display: list-item;
 }
 
-/* Style code blocks */
-
 .post-content pre {
-  /* border-radius: 5px; */
   padding: 10px 0;
 }
 
@@ -53,6 +49,5 @@
 
 pre[class*='language-'] {
   padding: 1em;
- 
   overflow: auto;
 }
