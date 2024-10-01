@@ -68,9 +68,18 @@ li {
   background-color: var(--cr8);
 }
 
+@media screen and (max-width: 1024px) {
+  nav {
+    padding: 10px 15px;
+  }
+  
+}
+
 @media screen and (max-width: 768px) {
   nav {
-    padding: 15px 40px;
+    nav {
+      padding:10px 40px;
+  }
   }
   .menu {
     position: initial;
@@ -79,9 +88,6 @@ li {
 }
 
 @media screen and (max-width: 500px) {
-  nav {
-    padding: 15px;
-  }
   li {
     margin-left: 20px;
   }

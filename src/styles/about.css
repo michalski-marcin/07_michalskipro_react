@@ -107,8 +107,8 @@ h2 span {
 }
 
 .about-bottom-intro p {
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 17px;
+  font-weight: 200;
   line-height: 25px;
   font-family: roboto mono;
   color: var(--cr3);
@@ -122,12 +122,13 @@ h2 span {
   font-weight: 200;
   font-family: 'Roboto Mono';
 }
-
+.mail-to {
+  margin-top: 12px;
+}
 .mail-to a {
-  margin-top: 16px;
   color: var(--cr2);
   font-weight: 400;
-  font-size: 18px;
+  font-size: 20px;
   transition: 0.3s;
   font-family: 'Roboto Mono';
 }

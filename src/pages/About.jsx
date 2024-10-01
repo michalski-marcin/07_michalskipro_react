@@ -92,8 +92,7 @@ function About() {
               }}>
               <p className='p-comment'>{`// Short story`}</p>
               <p>
-                I'm a front-end developer, passionate about coding and focused
-                on building websites and apps with React.
+              I began my journey in web development by creating websites as a front-end developer. Now, I focus on building applications with React and exploring my passion for Backend with Java and Spring Boot.
               </p>
             </motion.div>
           </div>

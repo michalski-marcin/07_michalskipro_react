@@ -20,11 +20,15 @@ function Portfolio() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        transition={{ duration: 0.5 }}>
+        transition={{ duration: 0.5 }}
+        style={{fontSize: 16}}
+      >
         On my{' '}
         <a
           href='https://github.com/michalski-marcin'
-          target='_blank' rel="noreferrer">
+          target='_blank'
+          rel="noreferrer"
+        >
           GitHub
         </a>
         , you can find all my projects, including those I'm currently working
@@ -48,6 +52,6 @@ function Portfolio() {
       ))}
     </div>
   );
-}
 
+}
 export default Portfolio;

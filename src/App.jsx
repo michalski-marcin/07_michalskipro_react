@@ -18,7 +18,7 @@ function App() {
     navigator.msMaxTouchPoints > 0;
 
   const isMobileTouchDevice = isTouchDevice && window.innerWidth < maxWidth;
-  
+
   return (
     <>
       <Navbar />
@@ -71,7 +71,6 @@ function App() {
             '.link',
             '.project-title-left',
             '.x-close-button',
-            
             '.post-card',
             '.category-box',
           ]}

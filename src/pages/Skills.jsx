@@ -1,7 +1,7 @@
 import '../styles/page.css';
 import { motion } from 'framer-motion';
 import Skill from '../components/Skill';
-import { backend, frontend, tools } from '../data/skills';
+import { languages, frameworks, tools } from '../data/skills';
 
 function Skills() {
   return (
@@ -13,10 +13,10 @@ function Skills() {
             animate={{ opacity: 200, x: 0 }}
             exit={{ opacity: 0, x: -200 }}
             transition={{ duration: 0.5, ease: [0.445, 0.05, 0.55, 0.95] }}>
-            <div className='skills-title'>// Backend</div>
+            <div className='skills-title'>// Programming languages</div>
           </motion.div>
           <div className='skills-container'>
-            <Skill skills={backend} />
+            <Skill skills={languages} />
           </div>
         </div>
 
@@ -30,10 +30,10 @@ function Skills() {
               ease: [0.445, 0.05, 0.55, 0.95],
               delay: 0.2,
             }}>
-            <div className='skills-title'>// Frontend</div>
+            <div className='skills-title'>// Frameworks and Styling</div>
           </motion.div>
           <div className='skills-container'>
-            <Skill skills={frontend} />
+            <Skill skills={frameworks} />
           </div>
         </div>
 

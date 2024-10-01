@@ -8,7 +8,7 @@
 }
 
 .wrap-projects {
-  width: 75%;
+  width: 65%;
   min-height: calc(100% - 60px);
   padding: 150px 0 100px 0;
   margin: 0 auto;
@@ -43,7 +43,7 @@
 
 .skills-wrap {
   width: 50%;
-  margin: 0 auto;
+  margin: 25px auto;
 }
 
 .skills-container {

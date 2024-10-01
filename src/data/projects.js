@@ -32,7 +32,7 @@ export const projects = [
         image: 'tabmemo.jpg',
         name: 'TabMemo',
         year: '2023',
-        description: 'The TabMemo plug-in was born out of the need to store pages to view in the near future without using browser tabs. It allows you to save the currently viewed page with a custom title and description creating something like a note with a link.\nThe project was created using React and uses Web Storage API to save the pages.',
+        description: 'The TabMemo plug-in was born out of the need to store pages for a quick review in the near future without using browser tabs. It allows you to save the currently viewed page with a custom title and description creating something like a note with a link.\nThe project was created using React and uses Web Storage API to save the pages.',
         technology: ['react-original.svg', 'javascript-original.svg', 'css3-original.svg', 'html5-original.svg'],
         commercial: false,
         github: 'https://github.com/michalski-marcin/react-browser-extension-tabmemo',

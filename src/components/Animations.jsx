@@ -31,6 +31,8 @@ const FadeOpacity = ({ children }) => {
   );
 };
 
+import PropTypes from 'prop-types';
+
 FadeOpacity.propTypes = {
   children: PropTypes.node.isRequired,
 };
