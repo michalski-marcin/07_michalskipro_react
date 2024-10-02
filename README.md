@@ -1,6 +1,7 @@
 # Marcin Michalski - Portfolio Website
 
 This is the repository for my personal portfolio website. It showcases my work, skills, blog posts, and provides ways to connect with me. The website is built using modern web technologies like React, TypeScript, and Framer Motion.
+![Screen of michalski.pro in Chrome browser](pic.jpg)
 
 ## Table of Contents
 - [Demo](#demo)
@@ -70,3 +71,4 @@ In addition to the React application, a WordPress backend is implemented to mana
 **Marcin Michalski**  
 - [GitHub](https://www.github.com/michalski-marcin)  
 - [LinkedIn](https://www.linkedin.com/in/michalski-marcin)
+- [Website](https://michalski.pro)
