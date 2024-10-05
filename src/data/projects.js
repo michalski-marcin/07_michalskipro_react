@@ -12,7 +12,8 @@ export const projects = [
         description: 'Website fully built with React, TypeScript and Tailwind CSS. It uses The Movie Data Base API to check recent trends and search movies or TV series in database. Main utility is to save movies in a editable "to watch" queue.',
         technology: ['react-original.svg', 'typescript-original.svg', 'tailwindcss-plain.svg', 'html5-original.svg'],
         commercial: false,
-        github: 'https://github.com/michalski-marcin/react-cinque-movieapp--in-progress'
+        github: 'https://github.com/michalski-marcin/react-cinque-movieapp--in-progress',
+        webpage: 'https://cinque.michalski.pro'
     },
     {
         id: 103,

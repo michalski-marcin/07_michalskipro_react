@@ -24,6 +24,20 @@
   left: 4px;
 }
 
+.certificate-card {
+  
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.certificate-card img {
+  width: 100%;
+  object-fit: cover;
+}
+
 @media screen and (max-width: 500px) {
   .skill-card {
     max-width: 49%;

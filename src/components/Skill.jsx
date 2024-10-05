@@ -3,6 +3,8 @@ import { useState, useEffect, useRef } from 'react';
 // import SelectedSkill from "./SelectedSkill";
 import '../styles/skill.css';
 
+import PropTypes from 'prop-types';
+
 function Skill({ skills }) {
   // OPTIONAL MODAL
   // const expandedSkillRef = useRef(null);
@@ -75,4 +77,15 @@ function Skill({ skills }) {
   );
 }
 
+Skill.propTypes = {
+  skills: PropTypes.arrayOf(
+    PropTypes.shape({
+      image: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
+
 export default Skill;
+
+
