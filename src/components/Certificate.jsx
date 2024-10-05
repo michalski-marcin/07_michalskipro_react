@@ -13,10 +13,10 @@ function Certificate({ certificates }) {
         <motion.div
           className='certificate-card'
           key={i}
-          initial={{ opacity: 0, scale: 1.3 }}
+          initial={{ opacity: 0, scale: 1.1 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.7 }}
-          transition={{ duration: 0.2, delay: i * 0.07, ease: 'easeInOut' }}>
+          transition={{ duration: 0.7, delay: i * 0.04, ease: 'easeInOut' }}>
           <img
             src={`./assets/${certificate.image}`}
             alt={certificate.id}
