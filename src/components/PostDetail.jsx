@@ -5,7 +5,9 @@ import '../styles/blog.css';
 import '../styles/post.css';
 import Prism from 'prismjs';
 import 'prismjs/components/prism-java';
-import 'prismjs/themes/prism.css'; // Prism theme for syntax highlighting
+import 'prismjs/themes/prism.css'; 
+import 'prismjs/plugins/line-numbers/prism-line-numbers.js'
+import 'prismjs/plugins/line-numbers/prism-line-numbers.css'// Prism theme for syntax highlighting
 
 function PostDetail() {
   const { id } = useParams();  // Get the post ID from the URL
@@ -49,7 +51,7 @@ function PostDetail() {
   }
 
   return (
-    <div className='wrap post-wrap'>
+    <div className='wrap post-wrap line-numbers'>
       {/* Link back to the posts list */}
       <Link to='/blog' className='back-link'>← Back to Posts</Link>
 

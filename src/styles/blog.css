@@ -119,6 +119,8 @@ pre.wp-block-code.language-java {
   padding: 12px 15px;
   border: 1px solid var(--cr5);
   border-radius: 5px;
+  overflow: auto; /* Handle long lines */
+    white-space: pre-wrap; /* Keep indentation and line breaks */
 }
 
 @media (max-width: 768px) {

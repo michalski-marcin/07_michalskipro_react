@@ -27,15 +27,15 @@
 .post-content ul li {
   list-style: square;
   display: list-item;
-  margin-bottom: 1px; 
-  line-height: 1.5; 
+  margin-bottom: 1px;
+  line-height: 1.5;
   font-size: 15px;
 }
 
 .post-content ul,
 .post-content ol {
   margin: 0;
-  padding-left: 20px; 
+  padding-left: 20px;
   display: list-item;
 }
 
@@ -50,4 +50,89 @@
 pre[class*='language-'] {
   padding: 1em;
   overflow: auto;
+}
+
+.wp-block-code {
+  border: 0;
+  padding: 0;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+.wp-block-code > span {
+  display: block;
+  overflow: auto;
+}
+
+.wp-block-code code.hljs {
+  display: block; /* Display as block element */
+}
+
+.shcb-language {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal;
+  word-break: normal;
+}
+
+.hljs {
+  box-sizing: border-box;
+}
+
+.hljs.shcb-code-table {
+  display: table;
+  width: 100%;
+}
+
+.shcb-textedit.shcb-textedit-wrap-lines {
+  overflow: auto !important;
+}
+
+.shcb-textedit.rich-text {
+  white-space: pre !important;
+  overflow-x: auto !important;
+}
+
+.shcb-textedit.rich-text.shcb-textedit-wrap-lines {
+  white-space: pre-wrap !important;
+}
+
+.code-block-overlay {
+  box-sizing: border-box;
+  height: 100%;
+  left: 0;
+  padding: inherit; /* To match the padding in the parent since this is positioned absolutely */
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  white-space: pre;
+  width: 100%;
+  z-index: 10;
+}
+
+.shcb-textedit-wrap-lines + .code-block-overlay {
+  white-space: pre-wrap;
+}
+
+.code-block-overlay .loc {
+  color: transparent;
+  display: block;
+  line-height: inherit;
+}
+
+.code-block-overlay .loc.highlighted {
+  background: rgba(86, 213, 255, 0.2);
+}
+
+pre[class*='language-'] > code {
+  position: relative;
+  display: block;
 }
