@@ -61,8 +61,6 @@ src/
 └── index.css
 ```
 
-## About the Website
-This website also highlights accessibility, making sure that all users can navigate and interact with the content easily.
 
 ## WordPress Implementation
 In addition to the React application, a WordPress backend is implemented to manage blog content dynamically. This integration allows for easy updates and content management without the need to redeploy the entire site. Blog posts can be created, edited, and published directly from the WordPress dashboard, while the React frontend fetches the latest posts using the WordPress REST API. This hybrid approach combines the flexibility of a static React site with the powerful content management capabilities of WordPress.
