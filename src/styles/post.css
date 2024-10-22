@@ -132,6 +132,21 @@ pre[class*='language-'] {
   background: rgba(86, 213, 255, 0.2);
 }
 
+[class^="wp-image"] {
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.wp-element-caption {
+  font-size: 11px;
+  font-style: italic;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
 pre[class*='language-'] > code {
   position: relative;
   display: block;

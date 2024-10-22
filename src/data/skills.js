@@ -42,6 +42,11 @@ export const frameworks = [
         image: 'tailwindcss-plain.svg',
         name: 'Tailwind',
     },
+    {
+        id: 5,
+        image: 'wordpress-plain.svg',
+        name: 'WordPress',
+    },
 ];
 
 export const tools = [

@@ -4,7 +4,7 @@ export const projects = [
     {
         id: 104,
         isFirst: true,
-        inProgress: true,
+        inProgress: false,
         type: 'website',
         image: 'cinque.png',
         name: 'CinQue',
